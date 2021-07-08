@@ -7,7 +7,7 @@
             <div>
              <i class="iconfont icon-tiku1"></i>
             </div>
-            <label style="font-size:10px;">首页</label>
+            <label>首页</label>
         </router-link>
         </li>
         <li>
@@ -15,7 +15,7 @@
             <div>
              <i class="icon iconfont icon-wodexinxi"></i>
             </div>
-            <label style="font-size:10px;">消息</label>
+            <label>消息</label>
         </router-link>
         </li>
         <li>
@@ -23,7 +23,7 @@
           <div>
             <i class="icon iconfont icon-paihangbang-1"></i>
           </div>
-          <label style="font-size:10px;">排行榜</label>
+          <label>排行榜</label>
         </router-link>
         </li>
         <li>
@@ -31,7 +31,7 @@
             <div>
              <i class="icon iconfont icon-gerenzhongxin1"></i>
             </div>
-            <label style="font-size:10px;">我的</label>
+            <label>我的</label>
         </router-link>
         </li>
       </ul>
@@ -66,6 +66,9 @@ export default {
 			float: left;
 			width: 25%;
 			text-align: center;
+      .router-link-active{
+          color: #00ff00;
+      }
 			i {
 				display: block;
 				font-size: 30px;
@@ -75,6 +78,7 @@ export default {
   label {
     float: left;
     width: 70%;
+    font-size: 10px;
   }
 }
 </style>
