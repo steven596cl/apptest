@@ -21,7 +21,7 @@ export default {
   data () {
     return {
       showLoading: false,
-      flag: ''
+      flag1: ''
     }
   },
   computed: {},
@@ -29,17 +29,17 @@ export default {
   created () {
   },
   mounted () {
-    if (sessionStorage.getItem('flag') === '' || sessionStorage.getItem('flag') == null) {
-      this.flag = true
-      sessionStorage.setItem('flag', this.flag)
+    if (sessionStorage.getItem('flag1') === '' || sessionStorage.getItem('flag1') == null) {
+      this.flag1 = true
+      sessionStorage.setItem('flag1', this.flag1)
     } else {
-      this.flag = sessionStorage.getItem('flag')
+      this.flag1 = sessionStorage.getItem('flag1')
     }
-    if (this.flag === true) {
+    if (this.flag1 === true) {
       this.showLoading = true
       setTimeout(() => {
-        this.flag = false
-        localStorage.setItem('flag', this.flag)
+        this.flag1 = false
+        localStorage.setItem('flag1', this.flag1)
         this.showLoading = false
       }, 2000)
     }
